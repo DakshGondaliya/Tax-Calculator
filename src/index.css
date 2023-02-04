@@ -1,0 +1,28 @@
+:root {
+  font-family: Monospace, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #FFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  letter-spacing: 0.675px;
+}
