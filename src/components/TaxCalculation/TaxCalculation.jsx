@@ -34,13 +34,14 @@ const TaxCalculation = props => {
   const otsTax = taxAsPerOTS(Number(totalIncome), Number(deduction), Number(exemption))
   const ntsTax = taxAsPerNTS(Number(totalIncome), financialYear)
 
-  const winner = otsTax > ntsTax
-                 ? 'New Tax Scheme'
-                 : ntsTax > otsTax && otsTax >= 0
-                  ? 'Old Tax Scheme'
-                  : otsTax < 0
-                    ? '-'
-                    : 'Both'
+  const winner =
+    otsTax > ntsTax
+      ? 'New Tax Scheme'
+      : ntsTax > otsTax && otsTax >= 0
+        ? 'Old Tax Scheme'
+        : !totalIncome || otsTax < 0
+          ? '-'
+          : 'Both'
 
   return (
     <div>
