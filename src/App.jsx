@@ -61,7 +61,7 @@ const App = () => {
           : <div>
             <ul>
               <li>Any kind of deductions & exemptions are not allowed, except standard deductions in the new tax scheme</li>
-              <li>If the total income exceeds 155000, then the allowed standard deduction is &#x20B9; 52500 otherwise, it is &#x20B9; 50000</li>
+              <li>If the total income exceeds 1550000, then the allowed standard deduction is &#x20B9; 52500 otherwise, it is &#x20B9; 50000</li>
             </ul>
           </div>
         }
